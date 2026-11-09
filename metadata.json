@@ -1,0 +1,6 @@
+{
+  "name": "DailyQuest - AI Non-Negotiable Side Quests & Streak System",
+  "description": "Gamified daily productivity app that generates tailored non-negotiable quests using AI country, time, and weather intelligence, complete with dopamine audio, particle FX, and unbroken streak tracking.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

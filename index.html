@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DailyQuest - AI Non-Negotiable Side Quests & Streak System</title>
+    <meta name="description" content="Gamified daily productivity app that generates tailored non-negotiable quests using AI country, time, and weather intelligence, complete with dopamine audio, particle FX, and unbroken streak tracking." />
+    <meta property="og:title" content="DailyQuest - AI Non-Negotiable Side Quests & Streak System" />
+    <meta property="og:description" content="Gamified daily productivity app that generates tailored non-negotiable quests using AI country, time, and weather intelligence, complete with dopamine audio, particle FX, and unbroken streak tracking." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+      // Suppress Vite HMR WebSocket proxy closing errors in AI Studio iframe environment
+      window.addEventListener('unhandledrejection', function(event) {
+        var reason = event.reason ? String(event.reason.message || event.reason) : '';
+        if (reason.indexOf('WebSocket') !== -1) {
+          event.preventDefault();
+        }
+      });
+      window.addEventListener('error', function(event) {
+        var msg = event.message ? String(event.message) : '';
+        if (msg.indexOf('WebSocket') !== -1) {
+          event.preventDefault();
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
